@@ -14,7 +14,12 @@ function pensja(e) {
       sum += (godziny[i].value - 160) * (stawki[i].value * 2);
       pracownicy[i].setAttribute("style", "background-color:greenyellow;");
     }
-
+    if (godziny[i].value >= 100 && godziny[i].value <= 160) {
+      pracownicy[i].setAttribute(
+        "style",
+        "background-color:rgb(213, 230, 236)"
+      );
+    }
     if (godziny[i].value < 100) {
       pracownicy[i].setAttribute("style", "background-color:red");
     }
