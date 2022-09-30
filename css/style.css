@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+#pracownicy {
+  height: 100%;
+  width: 62vh;
+  margin: 30px 0px 40px 30px;
+  background: linear-gradient(
+    to left,
+    rgba(159, 194, 114, 0.6),
+    rgba(93, 170, 173, 0.6),
+    rgba(91, 170, 138, 0.6)
+  );
+  display: flex;
+  flex-direction: column;
+  font-weight: 1000;
+  border-radius: 5%;
+  position: relative;
+  box-shadow: 15px 15px 1px rgba(97, 97, 97, 0.2);
+}
+
+div div {
+  margin-left: 40px;
+}
+
+h2 {
+  background: linear-gradient(
+    135deg,
+    rgba(82, 77, 181, 1) 0%,
+    rgba(73, 73, 185, 1) 20%,
+    rgba(59, 129, 162, 1) 41%,
+    rgba(55, 84, 159, 1) 60%,
+    rgba(119, 118, 217, 1) 81%,
+    rgba(166, 232, 245, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Orelega One";
+  font-size: 35px;
+}
+
+#oblicz {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.pracownik {
+  background-color: rgb(213, 230, 236);
+  border: 2px solid black;
+  width: 20vh;
+  display: inline-block;
+  text-align: center;
+  font-family: "Orelega One";
+  font-weight: 1;
+  align-items: stretch;
+}
+
+#tytul-pracownik,
+#tytul-czas,
+#tytul-stawka,
+#tytul-wyplata {
+  background: linear-gradient(
+    to right,
+    rgba(166, 232, 245, 1) 50%,
+    rgb(142, 224, 224)
+  );
+  display: inline-block;
+  border: 2px solid black;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: "Orelega One";
+  font-weight: 500;
+}
+
+#tytul-pracownik {
+  width: 20vh;
+}
+
+#tytul-czas,
+#tytul-stawka,
+#tytul-wyplata {
+  width: 10vh;
+}
+
+input[type="number"] {
+  width: 10vh;
+  text-align: center;
+  font-weight: 1000;
+  font-family: "Aldrich";
+}
+
+.wyplata {
+  background-color: cornsilk;
+  border: 2px solid black;
+  justify-items: center;
+  display: inline-block;
+  text-align: center;
+  width: 10vh;
+  font-family: "Aldrich";
+}
+
+button {
+  background: linear-gradient(
+    135deg,
+    rgba(153, 149, 224, 1) 0%,
+    rgba(143, 143, 240, 1) 20%,
+    rgba(175, 226, 250, 1) 52%,
+    rgba(161, 183, 240, 1) 57%,
+    rgba(190, 176, 186, 1) 81%,
+    rgba(166, 232, 245, 1) 100%
+  );
+  align-self: center;
+  transition: 0.4s;
+  width: 20vh;
+  height: 4vh;
+  font-weight: 650;
+  font-size: 15px;
+  border-radius: 10%;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+  cursor: grab;
+  color: rgb(22, 33, 59);
+  text-transform: uppercase;
+  font-family: "Orelega One";
+  animation: off 0.75s ease forwards;
+}
+
+button:hover {
+  transition: 0.2s linear;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px black;
+  animation: on 0.75s ease forwards;
+}
+
+h3 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.623);
+  font-family: "Aldrich";
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Orelega One";
+  text-align: left;
+  width: 60vh;
+  margin-left: -20px;
+  font-weight: 500;
+  list-style-type: none;
+  -webkit-text-stroke: 1px black;
+  font-size: 30px;
+}
+
+.top {
+  color: rgb(177, 150, 1);
+  margin-bottom: 20px;
+}
+
+.top::before {
+  margin-right: 20px;
+  content: "1.";
+  font-family: "Londrina Solid";
+}
+
+.top + li {
+  color: rgba(177, 175, 175, 0.863);
+}
+
+.top + li::before {
+  margin-right: 20px;
+  content: "2.";
+  font-family: "Londrina Solid";
+}
+
+.last {
+  color: rgba(100, 53, 14, 0.733);
+  margin-top: 20px;
+}
+
+.last::before {
+  margin-right: 20px;
+  content: "3.";
+  font-family: "Londrina Solid";
+}
+
+@keyframes off {
+  0% {
+    background-size: 800%;
+  }
+  40% {
+    background-size: 800%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes on {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 800%;
+  }
+  100% {
+    background-size: 800%;
+  }
+}
